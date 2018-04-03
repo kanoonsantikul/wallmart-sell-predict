@@ -1,0 +1,80 @@
+Residuals:
+   Min     1Q Median     3Q    Max 
+-42862 -14324  -6709   6370 593884 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    1.117e+04  1.430e+03   7.811 5.73e-15 ***
+Store         -1.660e+02  6.834e+00 -24.296  < 2e-16 ***
+Dept           1.094e+02  2.536e+00  43.124  < 2e-16 ***
+IsHolidayTrue -1.328e+02  3.063e+02  -0.434   0.6645    
+Temperature   -1.026e+00  4.878e+00  -0.210   0.8335    
+Fuel_Price    -1.614e+03  3.401e+02  -4.746 2.08e-06 ***
+MarkDown1      3.188e-02  1.538e-02   2.073   0.0382 *  
+MarkDown2     -1.459e-02  9.192e-03  -1.587   0.1125    
+MarkDown3      1.189e-01  8.104e-03  14.672  < 2e-16 ***
+MarkDown4     -3.479e-02  1.963e-02  -1.772   0.0764 .  
+MarkDown5      8.917e-02  1.224e-02   7.283 3.29e-13 ***
+CPI           -3.104e+01  2.261e+00 -13.729  < 2e-16 ***
+Unemployment  -4.823e+02  4.885e+01  -9.872  < 2e-16 ***
+TypeB          1.782e+03  3.175e+02   5.612 2.00e-08 ***
+TypeC          1.008e+04  9.509e+02  10.600  < 2e-16 ***
+Size           1.195e-01  3.154e-03  37.887  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 23790 on 97040 degrees of freedom
+  (324514 observations deleted due to missingness)
+Multiple R-squared:  0.07506,	Adjusted R-squared:  0.07492 
+F-statistic:   525 on 15 and 97040 DF,  p-value: < 2.2e-16
+
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-42250 -13525  -6298   6022 628831 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   9.586e+03  1.083e+03   8.849  < 2e-16 ***
+Store        -1.525e+02  5.602e+00 -27.219  < 2e-16 ***
+Dept          1.123e+02  2.020e+00  55.586  < 2e-16 ***
+Fuel_Price   -9.965e+02  2.426e+02  -4.107    4e-05 ***
+MarkDown1     2.357e-02  7.831e-03   3.010  0.00262 ** 
+MarkDown3     1.199e-01  6.523e-03  18.380  < 2e-16 ***
+MarkDown5     1.006e-01  1.103e-02   9.117  < 2e-16 ***
+CPI          -2.784e+01  1.734e+00 -16.048  < 2e-16 ***
+Unemployment -3.594e+02  3.859e+01  -9.313  < 2e-16 ***
+TypeB         5.101e+02  2.283e+02   2.235  0.02544 *  
+TypeC         7.844e+03  4.001e+02  19.604  < 2e-16 ***
+Size          1.054e-01  2.189e-03  48.166  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22740 on 136530 degrees of freedom
+  (285028 observations deleted due to missingness)
+Multiple R-squared:  0.08562,	Adjusted R-squared:  0.08554 
+F-statistic:  1162 on 11 and 136530 DF,  p-value: < 2.2e-16
+
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-32911 -12922  -5863   5597 673231 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   6.928e+03  4.307e+02  16.088  < 2e-16 ***
+Store        -1.433e+02  3.053e+00 -46.934  < 2e-16 ***
+Dept          1.104e+02  1.096e+00 100.701  < 2e-16 ***
+Fuel_Price   -1.861e+02  7.432e+01  -2.505 0.012258 *  
+CPI          -2.450e+01  9.360e-01 -26.178  < 2e-16 ***
+Unemployment -2.256e+02  1.930e+01 -11.688  < 2e-16 ***
+TypeB        -3.565e+02  1.068e+02  -3.339 0.000841 ***
+TypeC         5.813e+03  1.835e+02  31.670  < 2e-16 ***
+Size          9.886e-02  9.542e-04 103.606  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21680 on 421561 degrees of freedom
+Multiple R-squared:  0.08854,	Adjusted R-squared:  0.08852 
+F-statistic:  5119 on 8 and 421561 DF,  p-value: < 2.2e-16
+
