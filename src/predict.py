@@ -11,12 +11,11 @@ from keras.optimizers import Adam
 import os
 import collections
 
-def construct_model (input_shape):
+def construct_model (input_shape, learn_rate = 0.01):
     model = Sequential()
-    model.add(Dense(64, input_shape=input_shape, activation='relu'))
-    model.add(Dense(128, activation='relu'))
+    model.add(Dense(7, input_shape=input_shape, activation='relu'))
     model.add(Dense(1))
-    model.compile(optimizer=Adam(lr=0.01), loss='mean_absolute_error')
+    model.compile(optimizer=Adam(lr=learn_rate), loss='mean_absolute_error')
 
     return model
 
@@ -30,9 +29,16 @@ def predict (model, valid_X, valid_Y):
     return {'predicted':predicted, 'mae':mae}
 
 def get_data (test_size = 0.2):
+    def remove_nan (file_data):
+        for i in range(5):
+            file_data = file_data[np.isfinite(file_data['MarkDown' + str(i + 1)])]
+        print(file_data.shape)
+        return file_data
+
     features = ['Store', 'Dept', 'Fuel_Price', 'CPI', 'Unemployment', 'Type', 'Size']
 
     file_data = pd.read_csv('../train_merged.csv')
+    # file_data = remove_nan(file_data)
 
     X = file_data[features]
     X = pd.get_dummies(X)
